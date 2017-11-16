@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-xs-10" >
+    <app-principal-edit></app-principal-edit>
+    <hr>
+    <ul class="list-group">
+      <a
+        class="list-group-item"
+        style="cursor: pointer"
+        *ngFor="let song of songs; let i = index"
+        (click)="onEditItem(i)"
+      >
+        {{ song.name }} ({{ song.artist }})
+      </a>
+    </ul>
+  </div>
+</div>

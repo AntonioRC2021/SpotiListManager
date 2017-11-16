@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="'col-xs-12">
+    <button class="btn btn-success" (click)="onNewPlaylist()">New playlist</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <app-playlist-item
+      *ngFor="let playlistEl of playlists; let i = index"
+      [playlist]="playlistEl"
+      [index]="i"></app-playlist-item>
+  </div>
+</div>
+
